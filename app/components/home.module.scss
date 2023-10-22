@@ -146,9 +146,11 @@
 }
 
 .sidebar-title {
-  font-size: 20px;
-  font-weight: bold;
   animation: slide-in ease 0.3s;
+  max-height: 200px;
+  display: flex;
+  margin-bottom: -30px;
+  justify-content: center;
 }
 
 .sidebar-sub-title {
