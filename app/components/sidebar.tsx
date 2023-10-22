@@ -1,5 +1,7 @@
 import { useEffect, useRef, useCallback } from "react";
 
+import NextImage from "next/image";
+
 import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
@@ -144,13 +146,13 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
-        <div className={styles["sidebar-title"]  + " no-dark"} data-tauri-drag-region>
-        <NextImage
+      <div className={styles["logo"] + " no-dark"}>
+            <NextImage
               src={RaisLogo.src}
               alt="logo"
               width={100%}
             />
-        </div>
+          </div>
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
