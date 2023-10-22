@@ -4,6 +4,8 @@ import { LocaleType } from "./index";
 
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
 
+const MASK_WORD = 'Avatar';
+
 const isApp = !!getClientConfig()?.isApp;
 const en: LocaleType = {
   WIP: "Coming Soon...",
@@ -47,7 +49,7 @@ const en: LocaleType = {
     },
     Commands: {
       new: "Start a new chat",
-      newm: "Start a new chat with mask",
+      newm: "Start a new chat with ${MASK_WORD}",
       next: "Next Chat",
       prev: "Previous Chat",
       clear: "Clear Context",
@@ -62,7 +64,7 @@ const en: LocaleType = {
         dark: "Dark Theme",
       },
       Prompt: "Prompts",
-      Masks: "Masks",
+      Masks: "${MASK_WORD}s",
       Clear: "Clear Context",
       Settings: "Settings",
     },
@@ -78,7 +80,7 @@ const en: LocaleType = {
     Send: "Send",
     Config: {
       Reset: "Reset to Default",
-      SaveAs: "Save as Mask",
+      SaveAs: "Save as ${MASK_WORD}",
     },
     IsContext: "Contextual Prompt",
   },
@@ -95,7 +97,7 @@ const en: LocaleType = {
     },
     IncludeContext: {
       Title: "Including Context",
-      SubTitle: "Export context prompts in mask or not",
+      SubTitle: "Export context prompts in ${MASK_WORD} or not",
     },
     Steps: {
       Select: "Select",
@@ -221,18 +223,18 @@ const en: LocaleType = {
 
       LocalState: "Local Data",
       Overview: (overview: any) => {
-        return `${overview.chat} chats，${overview.message} messages，${overview.prompt} prompts，${overview.mask} masks`;
+        return `${overview.chat} chats，${overview.message} messages，${overview.prompt} prompts，${overview.mask} ${MASK_WORD}s`;
       },
       ImportFailed: "Failed to import from file",
     },
     Mask: {
       Splash: {
-        Title: "Mask Splash Screen",
-        SubTitle: "Show a mask splash screen before starting new chat",
+        Title: "${MASK_WORD} Splash Screen",
+        SubTitle: "Show an ${MASK_WORD} splash screen before starting new chat",
       },
       Builtin: {
-        Title: "Hide Builtin Masks",
-        SubTitle: "Hide builtin masks in mask list",
+        Title: "Hide Builtin ${MASK_WORD}s",
+        SubTitle: "Hide builtin ${MASK_WORD}s in ${MASK_WORD} list",
       },
     },
     Prompt: {
@@ -348,7 +350,7 @@ const en: LocaleType = {
     Sysmessage: "You are an assistant that",
   },
   Mask: {
-    Name: "Mask",
+    Name: "${MASK_WORD}",
     Page: {
       Title: "Prompt Template",
       SubTitle: (count: number) => `${count} prompt templates`,
@@ -382,8 +384,8 @@ const en: LocaleType = {
         SubTitle: "Do not show in-context prompts in chat",
       },
       Share: {
-        Title: "Share This Mask",
-        SubTitle: "Generate a link to this mask",
+        Title: "Share This ${MASK_WORD}",
+        SubTitle: "Generate a link to this ${MASK_WORD}",
         Action: "Copy Link",
       },
     },
@@ -391,8 +393,8 @@ const en: LocaleType = {
   NewChat: {
     Return: "Return",
     Skip: "Just Start",
-    Title: "Pick a Mask",
-    SubTitle: "Chat with the Soul behind the Mask",
+    Title: "Pick an ${MASK_WORD}",
+    SubTitle: "Chat with the Soul behind the ${MASK_WORD}",
     More: "Find More",
     NotShow: "Never Show Again",
     ConfirmNoShow: "Confirm to disable？You can enable it in settings later.",
