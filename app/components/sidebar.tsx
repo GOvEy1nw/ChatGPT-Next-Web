@@ -11,6 +11,7 @@ import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
+import RaisLogo from "../icons/rais-logo.svg";
 
 import Locale from "../locales";
 
@@ -145,13 +146,7 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          Rais
-        </div>
-        <div className={styles["sidebar-sub-title"]}>
-          Your personal AI assistant.
-        </div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
+        <RaisLogo />
         </div>
       </div>
 
