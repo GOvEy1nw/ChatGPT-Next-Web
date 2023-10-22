@@ -5,6 +5,7 @@ import styles from "./home.module.scss";
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
+import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -28,7 +29,6 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { useMobileScreen } from "../utils";
 import dynamic from "next/dynamic";
-import NextImage from "next/image";
 import { showConfirm, showToast } from "./ui-lib";
 
 const ChatList = dynamic(async () => (await import("./chat-list")).ChatList, {
@@ -145,13 +145,9 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
-      <div className={styles["logo"] + " no-dark"}>
-            <NextImage
-              src="../icons/rais-logo.png"
-              alt="logo"
-              width={100%}
-            />
-          </div>
+        <div className={styles["sidebar-title"]  + " no-dark"} data-tauri-drag-region>
+        <RaisLogo />
+        </div>
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
