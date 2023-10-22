@@ -145,7 +145,7 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
-      <div className={styles["logo"] + " no-dark"} data-tauri-drag-region>
+      <div className={styles["logo"] + " no-dark"}>
             <NextImage
               src="../icons/rais-logo.png"
               alt="logo"
