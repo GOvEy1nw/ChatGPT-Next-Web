@@ -285,7 +285,7 @@
 }
 
 .chat-message-header {
-  margin: 5px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 
@@ -318,8 +318,8 @@
 
 .chat-alt-user-style {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .chat-message-container {
