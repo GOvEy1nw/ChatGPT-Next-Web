@@ -308,6 +308,12 @@
   }
 }
 
+.chat-alt-style {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 .chat-message-container {
   max-width: var(--message-max-width);
   display: flex;
