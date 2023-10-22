@@ -1130,11 +1130,7 @@ function _Chat() {
                 }
               >
                 <div className={styles["chat-message-container"]}>
-                  <div
-                    className={
-                      isUser ? styles["chat-alt-user-style"] : styles["chat-alt-style"]
-                    }
-                  >
+                  <div className={styles["chat-alt-style"]}>
                     <div className={styles["chat-message-header"]}>
                       <div className={styles["chat-message-avatar"]}>
                         <div className={styles["chat-message-edit"]}>
