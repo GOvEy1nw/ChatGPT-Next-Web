@@ -5,13 +5,12 @@ import styles from "./home.module.scss";
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
-import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
-import RaisLogo from "../icons/rais-logo.svg";
+import RaisLogo from "../icons/rais-logo.png";
 
 import Locale from "../locales";
 
@@ -146,7 +145,11 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]  + " no-dark"} data-tauri-drag-region>
-        <RaisLogo />
+        <NextImage
+              src={RaisLogo.src}
+              alt="logo"
+              width={100%}
+            />
         </div>
       </div>
 
