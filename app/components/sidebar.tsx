@@ -1,7 +1,5 @@
 import { useEffect, useRef, useCallback } from "react";
 
-import NextImage from "next/image";
-
 import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
@@ -12,7 +10,7 @@ import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
-import RaisLogo from "../icons/rais-logo.png";
+import RaisLogo from "../icons/rais-logo.svg";
 
 import Locale from "../locales";
 
@@ -30,6 +28,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { useMobileScreen } from "../utils";
 import dynamic from "next/dynamic";
+import NextImage from "next/image";
 import { showConfirm, showToast } from "./ui-lib";
 
 const ChatList = dynamic(async () => (await import("./chat-list")).ChatList, {
@@ -146,13 +145,9 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
-      <div className={styles["logo"] + " no-dark"}>
-            <NextImage
-              src={RaisLogo.src}
-              alt="logo"
-              width={100%}
-            />
-          </div>
+        <div className={styles["sidebar-title"]  + " no-dark"} data-tauri-drag-region>
+        <RaisLogo />
+        </div>
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
