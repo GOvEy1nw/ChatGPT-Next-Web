@@ -352,8 +352,8 @@ const en: LocaleType = {
   Mask: {
     Name: `${MASK_WORD}`,
     Page: {
-      Title: "Prompt Template",
-      SubTitle: (count: number) => `${count} prompt templates`,
+      Title: `${MASK_WORD} Templates`,
+      SubTitle: (count: number) => `${count} ${MASK_WORD} templates`,
       Search: "Search Templates",
       Create: "Create",
     },
