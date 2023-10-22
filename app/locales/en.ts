@@ -49,7 +49,7 @@ const en: LocaleType = {
     },
     Commands: {
       new: "Start a new chat",
-      newm: "Start a new chat with ${MASK_WORD}",
+      newm: `Start a new chat with ${MASK_WORD}`,
       next: "Next Chat",
       prev: "Previous Chat",
       clear: "Clear Context",
@@ -64,7 +64,7 @@ const en: LocaleType = {
         dark: "Dark Theme",
       },
       Prompt: "Prompts",
-      Masks: "${MASK_WORD}s",
+      Masks: `${MASK_WORD}s`,
       Clear: "Clear Context",
       Settings: "Settings",
     },
@@ -80,7 +80,7 @@ const en: LocaleType = {
     Send: "Send",
     Config: {
       Reset: "Reset to Default",
-      SaveAs: "Save as ${MASK_WORD}",
+      SaveAs: `Save as ${MASK_WORD}`,
     },
     IsContext: "Contextual Prompt",
   },
@@ -97,7 +97,7 @@ const en: LocaleType = {
     },
     IncludeContext: {
       Title: "Including Context",
-      SubTitle: "Export context prompts in ${MASK_WORD} or not",
+      SubTitle: `Export context prompts in ${MASK_WORD} or not`,
     },
     Steps: {
       Select: "Select",
@@ -229,12 +229,12 @@ const en: LocaleType = {
     },
     Mask: {
       Splash: {
-        Title: "${MASK_WORD} Splash Screen",
-        SubTitle: "Show an ${MASK_WORD} splash screen before starting new chat",
+        Title: `${MASK_WORD} Splash Screen`,
+        SubTitle: `Show an ${MASK_WORD} splash screen before starting new chat`,
       },
       Builtin: {
-        Title: "Hide Builtin ${MASK_WORD}s",
-        SubTitle: "Hide builtin ${MASK_WORD}s in ${MASK_WORD} list",
+        Title: `Hide Builtin ${MASK_WORD}s`,
+        SubTitle: `Hide builtin ${MASK_WORD}s in ${MASK_WORD} list`,
       },
     },
     Prompt: {
@@ -350,7 +350,7 @@ const en: LocaleType = {
     Sysmessage: "You are an assistant that",
   },
   Mask: {
-    Name: "${MASK_WORD}",
+    Name: `${MASK_WORD}`,
     Page: {
       Title: "Prompt Template",
       SubTitle: (count: number) => `${count} prompt templates`,
@@ -384,8 +384,8 @@ const en: LocaleType = {
         SubTitle: "Do not show in-context prompts in chat",
       },
       Share: {
-        Title: "Share This ${MASK_WORD}",
-        SubTitle: "Generate a link to this ${MASK_WORD}",
+        Title: `Share This ${MASK_WORD}`,
+        SubTitle: `Generate a link to this ${MASK_WORD}`,
         Action: "Copy Link",
       },
     },
@@ -393,8 +393,8 @@ const en: LocaleType = {
   NewChat: {
     Return: "Return",
     Skip: "Just Start",
-    Title: "Pick an ${MASK_WORD}",
-    SubTitle: "Chat with the Soul behind the ${MASK_WORD}",
+    Title: `Pick an ${MASK_WORD}`,
+    SubTitle: `Chat with the Soul behind the ${MASK_WORD}`,
     More: "Find More",
     NotShow: "Never Show Again",
     ConfirmNoShow: "Confirm to disable？You can enable it in settings later.",
