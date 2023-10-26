@@ -135,7 +135,6 @@
 
 .sidebar-header {
   position: relative;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -147,9 +146,8 @@
 
 .sidebar-title {
   animation: slide-in ease 0.3s;
-  max-height: 200px;
+  max-height: 100px;
   display: flex;
-  margin: 10px;
   justify-content: center;
 }
 
