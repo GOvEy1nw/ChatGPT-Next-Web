@@ -12,7 +12,6 @@ import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
 import BrandLogo from "../icons/brand-logo.svg";
-import BrandLogoLight from "../icons/brand-logo-light.svg";
 
 import Locale from "../locales";
 
@@ -137,10 +136,6 @@ export function SideBar(props: { className?: string }) {
   const navigate = useNavigate();
   const config = useAppConfig();
 
-  // Using the theme configuration to determine which logo to show
-  const isDarkMode = document.body.classList.contains("dark");
-  const LogoComponent = isDarkMode ? BrandLogo : BrandLogoLight;
-
   useHotKey();
 
   return (
@@ -150,8 +145,8 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
-        <div className={styles["sidebar-title"] + " no-dark"} data-tauri-drag-region>
-          <LogoComponent />
+        <div className={styles["sidebar-title"]  + " no-dark"} data-tauri-drag-region>
+        <BrandLogo />
         </div>
       </div>
 

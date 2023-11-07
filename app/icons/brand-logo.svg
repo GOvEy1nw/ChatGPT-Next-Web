@@ -3,7 +3,7 @@
 <style type="text/css">
 	.st0{fill:#EE0ED7;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#EE0ED7;}
-	.st2{fill:#1C1F24;}
+    .st2 { fill: var(--brand-logo-color); } /* Use CSS variable */
 </style>
 <path class="st0" d="M264.6,62.9c89.7,0,162.1,72.4,162.1,162.1s-72.4,162.1-162.1,162.1S102.5,314.7,102.5,225
 	S174.9,62.9,264.6,62.9z M264.6,35.4c-104.5,0-189.6,85-189.6,189.6c0,104.5,85,189.6,189.6,189.6c104.5,0,189.6-85,189.6-189.6
