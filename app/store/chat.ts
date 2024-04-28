@@ -61,14 +61,13 @@ export interface ChatSession {
 }
 
 export const DEFAULT_TOPIC = Locale.Store.DefaultTopic;
-export const BOT_HELLO = getBotHello;
+export const BOT_HELLO: ChatMessage = createMessage({
+  role: "assistant",
+  content: Locale.Store.BotHello + " " + BotName,
+});
 
-
-function getBotHello(mask: Mask): ChatMessage {
-  return createMessage({
-      role: "assistant",
-      content: Locale.Store.BotHello + mask.name
-  });
+function BotName(mask: Mask){
+  mask.name;
 }
 
 function createEmptySession(): ChatSession {
