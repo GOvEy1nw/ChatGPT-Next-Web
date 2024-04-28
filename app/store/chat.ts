@@ -66,8 +66,10 @@ export const BOT_HELLO: ChatMessage = createMessage({
   content: Locale.Store.BotHello + " " + BotName,
 });
 
-function BotName(mask: Mask){
-  return mask.name;
+function BotName(){
+  const chatStore = useChatStore();
+  const session = chatStore.currentSession();
+  return session.mask.name;
 }
 
 function createEmptySession(): ChatSession {
