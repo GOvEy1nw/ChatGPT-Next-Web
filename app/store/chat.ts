@@ -67,7 +67,7 @@ export const BOT_HELLO: ChatMessage = createMessage({
 });
 
 function BotName(mask: Mask){
-  mask.name;
+  return mask.name;
 }
 
 function createEmptySession(): ChatSession {
