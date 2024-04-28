@@ -29,7 +29,7 @@ export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
 
   submitKey: SubmitKey.Enter,
-  avatar: "1f603",
+  avatar: "1f7e3",
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: !!getClientConfig()?.isApp,
@@ -39,7 +39,7 @@ export const DEFAULT_CONFIG = {
 
   disablePromptHint: false,
 
-  dontShowMaskSplashScreen: false, // dont show splash screen when create chat
+  dontShowMaskSplashScreen: true, // dont show splash screen when create chat
   hideBuiltinMasks: false, // dont add builtin masks
 
   customModels: "",
