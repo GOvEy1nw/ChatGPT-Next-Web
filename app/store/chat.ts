@@ -717,8 +717,7 @@ export const useChatStore = createPersistStore(
 );
 
 function BotName(){
-const chatStore = useChatStore();
-const session = chatStore.currentSession();
+const session = useChatStore.currentSession();
 return session.mask.name;
 }
 
