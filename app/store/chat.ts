@@ -716,11 +716,14 @@ export const useChatStore = createPersistStore(
   },
 );
 
+function BotName(){
 const chatStore = useChatStore();
 const session = chatStore.currentSession();
+return session.mask.name;
+}
 
 export const BOT_HELLO: ChatMessage = createMessage(
   {
   role: "assistant",
-  content: Locale.Store.BotHello + " " + session.mask.name,
+  content: Locale.Store.BotHello + " " + BotName,
 });
