@@ -52,7 +52,7 @@ export const EN_MASKS: BuiltinMask[] = [
   },
   {
     avatar: "2328-fe0f",
-    name: "Codi - The Coding Assistant",
+    name: "Codi: The Coding Assistant",
     context: [
       {
         id: "Codi",
@@ -86,7 +86,7 @@ export const EN_MASKS: BuiltinMask[] = [
   },
   {
     avatar: "1f913",
-    name: "Maurice - The Tech Whizz",
+    name: "Maurice: The Tech Whizz",
     context: [
       {
         id: "Maurice",
