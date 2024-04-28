@@ -1,10 +1,15 @@
 import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
 import { LocaleType } from "./index";
+import {
+  useChatStore,
+} from "../store";
 
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
-
 const MASK_WORD = 'Avatar';
+const chatStore = useChatStore();
+const session = chatStore.currentSession();
+const MASK_NAME = session.mask.name;
 
 const isApp = !!getClientConfig()?.isApp;
 const en: LocaleType = {
@@ -385,7 +390,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    BotHello: "Hello! I'm " + {MASK_NAME} + " How can I assist you today?",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
