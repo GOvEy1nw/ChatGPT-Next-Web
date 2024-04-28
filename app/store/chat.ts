@@ -61,16 +61,6 @@ export interface ChatSession {
 }
 
 export const DEFAULT_TOPIC = Locale.Store.DefaultTopic;
-export const BOT_HELLO: ChatMessage = createMessage({
-  role: "assistant",
-  content: Locale.Store.BotHello + " " + BotName,
-});
-
-function BotName(){
-  const chatStore = useChatStore();
-  const session = chatStore.currentSession();
-  return session.mask.name;
-}
 
 function createEmptySession(): ChatSession {
   return {
@@ -725,3 +715,12 @@ export const useChatStore = createPersistStore(
     },
   },
 );
+
+const chatStore = useChatStore();
+const session = chatStore.currentSession();
+
+export const BOT_HELLO: ChatMessage = createMessage(
+  {
+  role: "assistant",
+  content: Locale.Store.BotHello + " " + session.mask.name,
+});
