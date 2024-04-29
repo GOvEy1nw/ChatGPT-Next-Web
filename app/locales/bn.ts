@@ -235,7 +235,8 @@ const bn: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "নতুন সংলাপ",
-    BotHello: "হ্যালো! আজকে আপনাকে কিভাবে সাহায্য করতে পারি?",
+    BotHello1: "হ্যালো! আজকে আপনাকে কিভাবে সাহায্য করতে পারি?",
+    BotHello2: "আমাদের সাহায্যগুলি আপনাকে সাহায্য করতে পারি",
     Error: "কিছু নিয়ে ভুল হয়েছে, পরে আবার চেষ্টা করুন।",
     Prompt: {
       History: (content: string) =>

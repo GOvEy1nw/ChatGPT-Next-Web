@@ -129,8 +129,9 @@ const no: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Ny samtale",
-    BotHello: "Hei! Hva kan jeg hjelpe deg med i dag?",
-    Error: "Noe gikk galt, vennligst prøv igjen senere.",
+    BotHello1: "Hei! Hva kan jeg hjelpe deg med i dag?",
+    BotHello2: "Jeg er her for å hjelpe deg.",
+    Error: "Noe gikk galt, vennligst prv igjen senere.",
     Prompt: {
       History: (content: string) =>
         "Dette er et sammendrag av chatthistorikken mellom AI-en og brukeren som en oppsummering: " +

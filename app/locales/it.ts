@@ -157,8 +157,9 @@ const it: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Nuova conversazione",
-    BotHello: "Ciao, come posso aiutarti oggi?",
-    Error: "Qualcosa è andato storto, riprova più tardi.",
+    BotHello1: "Ciao, come posso aiutarti oggi?",
+    BotHello2: "Jsem tu pro váš spolehliv pomocník.",
+    Error: "Qualcosa è andato storto, riprova pi tardi.",
     Prompt: {
       History: (content: string) =>
         "Questo è un riassunto della cronologia delle chat tra l'IA e l'utente:" +

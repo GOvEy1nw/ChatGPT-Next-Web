@@ -384,7 +384,8 @@ const sk: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Nová konverzácia",
-    BotHello: "Ahoj! Ako vám dnes môžem pomôcť?",
+    BotHello1: "Ahoj! Ako vám dnes môžem pomôcť?",
+    BotHello2: " ",
     Error: "Niečo sa pokazilo, skúste to prosím neskôr znova.",
     Prompt: {
       History: (content: string) =>

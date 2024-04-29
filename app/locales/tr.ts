@@ -159,8 +159,9 @@ const tr: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Yeni Konuşma",
-    BotHello: "Merhaba! Size bugün nasıl yardımcı olabilirim?",
-    Error: "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyiniz.",
+    BotHello1: "Merhaba! Size bugn nasıl yardımcı olabilirim?",
+    BotHello2: "Ben bir yardımcı.",
+    Error: "Bir şeyler yanlış gitti. Ltfen daha sonra tekrar deneyiniz.",
     Prompt: {
       History: (content: string) =>
         "Bu, yapay zeka ile kullanıcı arasındaki sohbet geçmişinin bir özetidir: " +
