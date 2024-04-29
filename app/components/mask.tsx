@@ -151,7 +151,6 @@ export function MaskConfig(props: {
         <ListItem title={Locale.Mask.Config.Description}>
           <textarea
             value={props.mask.description}
-            type="text"
             className={chatStyle["context-content"]}
             rows={focusingInput ? 5 : 1}
             onFocus={() => setFocusingInput(true)}
@@ -171,7 +170,6 @@ export function MaskConfig(props: {
         <ListItem title={Locale.Mask.Config.WelcomeMessage}>
           <textarea
             value={props.mask.welcomeMessage}
-            type="text"
             className={chatStyle["context-content"]}
             rows={focusingInput ? 5 : 1}
             style={{ width: '70%' }}
