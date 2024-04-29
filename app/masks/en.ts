@@ -4,6 +4,7 @@ export const EN_MASKS: BuiltinMask[] = [
   {
     avatar:"1f49a",
     name:"Adam: BetterHelp",
+    description: "Your personal CBT Therapist",
     context:[
       {
         id:"Adam1-4",
@@ -88,6 +89,7 @@ export const EN_MASKS: BuiltinMask[] = [
   {
     avatar: "1f913",
     name: "Maurice: The Tech Whizz",
+    description: "Your personal tech wizard",
     context: [
       {
         id: "Maurice",
