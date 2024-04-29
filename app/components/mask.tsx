@@ -582,7 +582,7 @@ export function MaskPage() {
                   <div className={styles["mask-title"]}>
                     <div className={styles["mask-name"]}>{m.name}</div>
                     <div className={styles["mask-info"] + " one-line"}>
-                      {`${Locale.Mask.Config.Description} / ${m.modelConfig.model}`}
+                      {`${m.welcomeMessage} / ${m.modelConfig.model}`}
                     </div>
                   </div>
                 </div>
