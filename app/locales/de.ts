@@ -156,8 +156,9 @@ const de: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Neues Gespräch",
-    BotHello1: "Hallo! Wie kann ich Ihnen heute helfen?",
-    BotHello2: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello: "Hallo! Wie kann ich Ihnen heute helfen?",
+    BotHello1: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
     Error:
       "Etwas ist schief gelaufen, bitte versuchen Sie es später noch einmal.",
     Prompt: {

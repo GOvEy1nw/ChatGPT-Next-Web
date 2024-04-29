@@ -154,8 +154,9 @@ const vi: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Cuộc trò chuyện mới",
-    BotHello1: "Xin chào! Mình có thể gip gì cho bạn?",
-    BotHello2: "Tôi là một trợ l.",
+    BotHello: "Xin chào! Mình có thể gip gì cho bạn?",
+    BotHello1: "Tôi là một trợ l.",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
     Error: "Có lỗi xảy ra, vui lòng thử lại sau.",
     Prompt: {
       History: (content: string) =>

@@ -274,8 +274,9 @@ const id: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Percakapan Baru",
-    BotHello1: "Halo! Bagaimana saya bisa membantu Anda hari ini?",
-    BotHello2: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello: "Halo! Bagaimana saya bisa membantu Anda hari ini?",
+    BotHello1: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
     Error: "Terjadi kesalahan, silakan coba lagi nanti.",
     Prompt: {
       History: (content: string) =>

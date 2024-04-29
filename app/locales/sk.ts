@@ -384,9 +384,10 @@ const sk: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Nová konverzácia",
-    BotHello1: "Ahoj! Ako vám dnes môžem pomôcť?",
-    BotHello2: " ",
-    Error: "Niečo sa pokazilo, skúste to prosím neskôr znova.",
+    BotHello: "Ahoj! Ako vám dnes môžem pomôcť?",
+    BotHello1: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
+    Error: "Niečo sa pokazilo, skste to prosím neskôr znova.",
     Prompt: {
       History: (content: string) =>
         "Toto je zhrnutie histórie chatu ako rekapitulácia: " + content,

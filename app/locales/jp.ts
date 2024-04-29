@@ -215,8 +215,9 @@ const jp: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "新しいチャット",
-    BotHello1: "何かお手伝いできることはありますか",
-    BotHello2: "私はこの助けに来ています",
+    BotHello: "何かお手伝いできることはありますか",
+    BotHello1: "私はこの助けに来ています",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
     Error: "エラーが発生しました。しばらくしてからやり直してください。",
     Prompt: {
       History: (content: string) =>

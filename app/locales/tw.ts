@@ -378,8 +378,9 @@ const tw = {
   },
   Store: {
     DefaultTopic: "新的對話",
-    BotHello1: "請問需要我的協助嗎？",
-    BotHello2: "我是這裡的助手",
+    BotHello: "請問需要我的協助嗎？",
+    BotHello1: "我是這裡的助手",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
     Error: "出錯了，請稍後再嘗試",
     Prompt: {
       History: (content: string) =>

@@ -211,8 +211,9 @@ const fr: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Nouvelle conversation",
-    BotHello1: "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
-    BotHello2: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello: "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+    BotHello1: "Jsem tu pro váš spolehliv pomocník.",
+    BotHello2: "Ahoj! Jak mohu dnes pomoci?",
     Error: "Quelque chose s'est mal passé, veuillez réessayer plus tard.",
     Prompt: {
       History: (content: string) =>

@@ -66,6 +66,17 @@ export const createBotHelloMessage = (maskName: string, maskDescription: string)
   content: `${Locale.Store.BotHello1}${maskName}, ${maskDescription}${Locale.Store.BotHello2}`,
 });
 
+export const createBotHelloMessage = (maskName: string, maskDescription: string): ChatMessage => {
+  let content = `${Locale.Store.BotHello1}${maskName}, ${maskDescription}${Locale.Store.BotHello2}`;
+  if (maskName === DEFAULT_TOPIC) {
+    content = Locale.Store.BotHello;
+  }
+  return createMessage({
+    role: "assistant",
+    content: content,
+  });
+};
+
 function createEmptySession(): ChatSession {
   return {
     id: nanoid(),

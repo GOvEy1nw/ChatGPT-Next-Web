@@ -384,6 +384,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
+    BotHello: "Hello! How can I assist you today?",
     BotHello1: "Hello! I'm ",
     BotHello2: ". How can I help you today?",
     Error: "Something went wrong, please try again later.",
