@@ -104,7 +104,7 @@
         background-color: var(--white);
         border-radius: 10px;
         margin-right: 10px;
-        max-width: 8em;
+        max-width: 25em;
         transform: scale(1);
         cursor: pointer;
         transition: all ease 0.3s;
@@ -118,6 +118,10 @@
         .mask-name {
           margin-left: 10px;
           font-size: 14px;
+        }
+        .mask-description {
+          margin-left: 10px;
+          font-size: 10px;
         }
       }
     }

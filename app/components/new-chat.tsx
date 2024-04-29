@@ -25,6 +25,7 @@ function MaskItem(props: { mask: Mask; onClick?: () => void }) {
         model={props.mask.modelConfig.model}
       />
       <div className={styles["mask-name"] + " one-line"}>{props.mask.name}</div>
+      <div className={styles["mask-description"] + " one-line"}>{props.mask.description}</div>
     </div>
   );
 }
