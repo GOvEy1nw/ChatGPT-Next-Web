@@ -61,9 +61,9 @@ export interface ChatSession {
 }
 
 export const DEFAULT_TOPIC = Locale.Store.DefaultTopic;
-export const createBotHelloMessage = (maskName: string): ChatMessage => createMessage({
+export const createBotHelloMessage = (mask: Mask): ChatMessage => createMessage({
   role: "assistant",
-  content: `${Locale.Store.BotHello1}${maskName}${Locale.Store.BotHello2}`,
+  content: `${Locale.Store.BotHello1}${mask.name}, ${mask.description}${Locale.Store.BotHello2}`,
 });
 
 function createEmptySession(): ChatSession {
