@@ -154,7 +154,8 @@ export function MaskConfig(props: {
             type="text"
             value={props.mask.description}
             className={chatStyle["context-content"]}
-            rows={focusingDescription ? 5 : 1}
+            style={{ width: '70%' }}
+            rows={focusingDescription ? 5 : 2}
             onFocus={() => setFocusingDescription(true)}
             onBlur={() => {
               setFocusingDescription(false);
@@ -172,7 +173,8 @@ export function MaskConfig(props: {
             type="text"
             value={props.mask.welcomeMessage}
             className={chatStyle["context-content"]}
-            rows={focusingWelcomeMessage ? 5 : 1}
+            style={{ width: '70%' }}
+            rows={focusingWelcomeMessage ? 5 : 2}
             onFocus={() => setFocusingWelcomeMessage(true)}
             onBlur={() => {
               setFocusingWelcomeMessage(false);
