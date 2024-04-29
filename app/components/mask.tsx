@@ -149,14 +149,15 @@ export function MaskConfig(props: {
           ></input>
         </ListItem>
         <ListItem title={Locale.Mask.Config.Description}>
-          <input
-            type="text"
+          <textarea
             value={props.mask.description}
             onChange={(e) =>
               props.updateMask((mask) => {
                 mask.description = e.currentTarget.value;
               })
             }
+            rows={3}  // Optionally set the number of rows
+            style={{ width: '100%' }}  // Optionally set the width
           />
         </ListItem>
         <ListItem

@@ -290,6 +290,7 @@ const bn: PartialLocaleType = {
     Config: {
       Avatar: "বট অবতার",
       Name: "বটের নাম",
+      Description: "বটের বিবরণ",
       Sync: {
         Title: "গ্লোবাল কনফিগ ব্যবহার করুন",
         SubTitle: "এই চ্যাটে গ্লোবাল কনফিগ ব্যবহার করুন",

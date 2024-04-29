@@ -210,6 +210,7 @@ const cs: PartialLocaleType = {
     Config: {
       Avatar: "Avatar Bota",
       Name: "Jméno Bota",
+      Description: "Popis Bota",
     },
   },
   NewChat: {

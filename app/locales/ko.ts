@@ -208,6 +208,7 @@ const ko: PartialLocaleType = {
     Config: {
       Avatar: "봇 아바타",
       Name: "봇 이름",
+      Description: "봇 설명",
     },
   },
   NewChat: {

@@ -212,6 +212,7 @@ const de: PartialLocaleType = {
     Config: {
       Avatar: "Bot Avatar",
       Name: "Bot Name",
+      Description: "Bot Description",
     },
   },
   NewChat: {

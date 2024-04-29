@@ -265,6 +265,7 @@ const jp: PartialLocaleType = {
     Config: {
       Avatar: "キャラクターのアイコン",
       Name: "キャラクターの名前",
+      Description: "Bot Description",
       Sync: {
         Title: "グローバル設定を利用する",
         SubTitle: "このチャットでグローバル設定を利用します。",

@@ -208,6 +208,7 @@ const vi: PartialLocaleType = {
     Config: {
       Avatar: "Ảnh đại diện bot",
       Name: "Tên bot",
+      Description: "Mô tả bot",
     },
   },
   NewChat: {
