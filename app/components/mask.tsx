@@ -100,7 +100,8 @@ export function MaskConfig(props: {
   };
 
   const globalConfig = useAppConfig();
-  const [focusingInput, setFocusingInput] = useState(false);
+  const [focusingDescription, setFocusingDescription] = useState(false);
+  const [focusingWelcomeMessage, setFocusingWelcomeMessage] = useState(false);
   return (
     <>
       <ContextPrompts
@@ -149,35 +150,32 @@ export function MaskConfig(props: {
           ></input>
         </ListItem>
         <ListItem title={Locale.Mask.Config.Description}>
-          <textarea
+          <Input
+            type="text"
             value={props.mask.description}
             className={chatStyle["context-content"]}
-            rows={focusingInput ? 5 : 1}
-            onFocus={() => setFocusingInput(true)}
+            rows={focusingDescription ? 5 : 1}
+            onFocus={() => setFocusingDescription(true)}
             onBlur={() => {
-              setFocusingInput(false);
-              // If the selection is not removed when the user loses focus, some
-              // extensions like "Translate" will always display a floating bar
+              setFocusingDescription(false);
               window?.getSelection()?.removeAllRanges();
             }}
             onChange={(e) =>
               props.updateMask((mask) => {
-                mask.welcomeMessage = e.currentTarget.value;
+                mask.description = e.currentTarget.value;
               })
             }
           />
         </ListItem>
         <ListItem title={Locale.Mask.Config.WelcomeMessage}>
-          <textarea
+          <Input
+            type="text"
             value={props.mask.welcomeMessage}
             className={chatStyle["context-content"]}
-            rows={focusingInput ? 5 : 1}
-            style={{ width: '70%' }}
-            onFocus={() => setFocusingInput(true)}
+            rows={focusingWelcomeMessage ? 5 : 1}
+            onFocus={() => setFocusingWelcomeMessage(true)}
             onBlur={() => {
-              setFocusingInput(false);
-              // If the selection is not removed when the user loses focus, some
-              // extensions like "Translate" will always display a floating bar
+              setFocusingWelcomeMessage(false);
               window?.getSelection()?.removeAllRanges();
             }}
             onChange={(e) =>
