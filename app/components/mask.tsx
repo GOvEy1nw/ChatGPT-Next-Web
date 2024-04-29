@@ -149,7 +149,7 @@ export function MaskConfig(props: {
           ></input>
         </ListItem>
         <ListItem title={Locale.Mask.Config.Description}>
-          <Input
+          <input
           value={props.mask.description}
           type="text"
           className={chatStyle["context-content"]}
@@ -166,14 +166,15 @@ export function MaskConfig(props: {
               mask.welcomeMessage = e.currentTarget.value;
             })
           }
-        />
+        ></input>
         </ListItem>
         <ListItem title={Locale.Mask.Config.WelcomeMessage}>
-          <Input
+          <input
           value={props.mask.welcomeMessage}
           type="text"
           className={chatStyle["context-content"]}
           rows={focusingInput ? 5 : 1}
+          style={{ width: '70%' }}
           onFocus={() => setFocusingInput(true)}
           onBlur={() => {
             setFocusingInput(false);
@@ -186,7 +187,7 @@ export function MaskConfig(props: {
               mask.welcomeMessage = e.currentTarget.value;
             })
           }
-        />
+        ></input>
         </ListItem>
         <ListItem
           title={Locale.Mask.Config.HideContext.Title}
