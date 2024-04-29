@@ -216,6 +216,7 @@ const ru: PartialLocaleType = {
       Avatar: "Аватар бота",
       Name: "Имя бота",
       Description: "Описание бота",
+      WelcomeMessage: "Приветственное сообщение",
     },
   },
   NewChat: {

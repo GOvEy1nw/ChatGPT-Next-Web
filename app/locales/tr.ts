@@ -214,6 +214,7 @@ const tr: PartialLocaleType = {
       Avatar: "Bot Avatar",
       Name: "Bot Name",
       Description: "Bot Description",
+      WelcomeMessage: "Welcome Message",
     },
   },
   NewChat: {

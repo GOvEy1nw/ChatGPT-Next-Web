@@ -335,6 +335,7 @@ const id: PartialLocaleType = {
       Avatar: "Avatar Bot",
       Name: "Nama Bot",
       Description: "Deskripsi Bot",
+      WelcomeMessage: "Pesan Pembuka",
       Sync: {
         Title: "Gunakan Konfigurasi Global",
         SubTitle: "Gunakan konfigurasi global dalam percakapan ini",

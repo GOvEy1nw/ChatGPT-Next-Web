@@ -211,6 +211,7 @@ const cs: PartialLocaleType = {
       Avatar: "Avatar Bota",
       Name: "Jméno Bota",
       Description: "Popis Bota",
+      WelcomeMessage: "Vítející zpráva",
     },
   },
   NewChat: {

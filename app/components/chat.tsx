@@ -946,9 +946,9 @@ function _Chat() {
 
   if (
     context.length === 0 &&
-    session.messages.at(0)?.content !== createBotHelloMessage(session.mask.name, session.mask.description).content
+    session.messages.at(0)?.content !== createBotHelloMessage(session.mask.name, session.mask.welcomeMessage).content
   ) {
-    const copiedHello = Object.assign({}, createBotHelloMessage(session.mask.name, session.mask.description));
+    const copiedHello = Object.assign({}, createBotHelloMessage(session.mask.name, session.mask.welcomeMessage));
     if (!accessStore.isAuthorized()) {
       copiedHello.content = Locale.Error.Unauthorized;
     }

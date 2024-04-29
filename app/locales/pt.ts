@@ -427,6 +427,7 @@ const pt: PartialLocaleType = {
       Avatar: "Avatar do Bot",
       Name: "Nome do Bot",
       Description: "Descrição do Bot",
+      WelcomeMessage: "Mensagem de Bem-vindo",
       Sync: {
         Title: "Usar Configuração Global",
         SubTitle: "Usar configuração global neste chat",

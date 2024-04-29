@@ -12,6 +12,7 @@ export type Mask = {
   avatar: string;
   name: string;
   description: string;
+  welcomeMessage: string;
   hideContext?: boolean;
   context: ChatMessage[];
   syncGlobalConfig?: boolean;
@@ -33,6 +34,7 @@ export const createEmptyMask = () =>
     avatar: DEFAULT_MASK_AVATAR,
     name: DEFAULT_TOPIC,
     description: "",
+    welcomeMessage: "",
     context: [],
     syncGlobalConfig: true, // use global config as default
     modelConfig: { ...useAppConfig.getState().modelConfig },

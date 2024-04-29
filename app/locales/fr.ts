@@ -267,6 +267,7 @@ const fr: PartialLocaleType = {
       Avatar: "Avatar de lassistant",
       Name: "Nom de lassistant",
       Description: "Description du bot",
+      WelcomeMessage: "Message de bienvenue",
       Sync: {
         Title: "Utiliser la configuration globale",
         SubTitle: "Utiliser la configuration globale dans cette conversation",

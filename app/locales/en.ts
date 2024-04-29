@@ -444,6 +444,7 @@ const en: LocaleType = {
       Avatar: "Bot Avatar",
       Name: "Bot Name",
       Description: "Bot Description",
+      WelcomeMessage: "Welcome Message",
       Sync: {
         Title: "Use Global Config",
         SubTitle: "Use global config in this chat",

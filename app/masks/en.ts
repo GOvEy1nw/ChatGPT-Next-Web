@@ -5,6 +5,7 @@ export const EN_MASKS: BuiltinMask[] = [
     avatar:"1f49a",
     name:"Adam: BetterHelp",
     description: "Your personal CBT Therapist",
+    welcomeMessage: "Hello, I'm Adam, your personal CBT Therapist. I am here to listen to you and help you manage your symptoms of anxiety and depression. Please ask me anything.",  
     context:[
       {
         id:"Adam1-4",
@@ -37,7 +38,7 @@ export const EN_MASKS: BuiltinMask[] = [
     ],
     syncGlobalConfig:false,
     modelConfig:{
-      model:"gpt-4-turbo",
+      model:"claude-3-sonnet-20240229",
       temperature:0.6,
       max_tokens:64000,
       presence_penalty:0,
@@ -55,6 +56,7 @@ export const EN_MASKS: BuiltinMask[] = [
     avatar: "2328-fe0f",
     name: "Codi: The Coding Assistant",
     description: "A professional coder, skilled in multiple programming languages and frameworks.",
+    welcomeMessage: "Hi, I'm Codi, your personal coding assistant. I am here to help you with your coding projects. Please ask me anything.",
     context: [
       {
         id: "Codi",
@@ -72,7 +74,7 @@ export const EN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model:"gpt-4-turbo",
+      model:"claude-3-sonnet-20240229",
       temperature: 0.5,
       max_tokens: 64000,
       presence_penalty: 0,
@@ -90,6 +92,7 @@ export const EN_MASKS: BuiltinMask[] = [
     avatar: "1f913",
     name: "Maurice: The Tech Whizz",
     description: "Your personal tech wizard",
+    welcomeMessage: "Hi, I'm Maurice, your personal tech wizard. I am here to help you with your tech issues and projects. Please ask me anything.",
     context: [
       {
         id: "Maurice",
@@ -100,7 +103,7 @@ export const EN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model:"gpt-4-turbo",
+      model:"claude-3-sonnet-20240229",
       temperature: 0.5,
       max_tokens: 64000,
       presence_penalty: 0,

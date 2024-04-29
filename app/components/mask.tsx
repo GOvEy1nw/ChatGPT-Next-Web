@@ -157,7 +157,19 @@ export function MaskConfig(props: {
               })
             }
             rows={3}  // Optionally set the number of rows
-            style={{ width: '100%' }}  // Optionally set the width
+            style={{ width: '80%' }}  // Optionally set the width
+          />
+        </ListItem>
+        <ListItem title={Locale.Mask.Config.WelcomeMessage}>
+          <textarea
+            value={props.mask.welcomeMessage}
+            onChange={(e) =>
+              props.updateMask((mask) => {
+                mask.welcomeMessage = e.currentTarget.value;
+              })
+            }
+            rows={1}  // Optionally set the number of rows
+            style={{ width: '80%' }}  // Optionally set the width
           />
         </ListItem>
         <ListItem
@@ -570,9 +582,7 @@ export function MaskPage() {
                   <div className={styles["mask-title"]}>
                     <div className={styles["mask-name"]}>{m.name}</div>
                     <div className={styles["mask-info"] + " one-line"}>
-                      {`${Locale.Mask.Item.Info(m.context.length)} / ${
-                        ALL_LANG_OPTIONS[m.lang]
-                      } / ${m.modelConfig.model}`}
+                      {`${Locale.Mask.Config.Description} / ${m.modelConfig.model}`}
                     </div>
                   </div>
                 </div>

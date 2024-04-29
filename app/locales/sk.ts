@@ -445,6 +445,7 @@ const sk: PartialLocaleType = {
       Avatar: "Avatar robota",
       Name: "Meno robota",
       Description: "Popis robota",
+      WelcomeMessage: "Vítející zpráva",
       Sync: {
         Title: "Použiť globálne nastavenia",
         SubTitle: "Použiť globálne nastavenia v tomto chate",

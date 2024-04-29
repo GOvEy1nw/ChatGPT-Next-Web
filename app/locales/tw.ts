@@ -434,6 +434,7 @@ const tw = {
       Avatar: "角色頭像",
       Name: "角色名稱",
       Description: "角色描述",
+      WelcomeMessage: "歡迎訊息",
       Sync: {
         Title: "使用全域性設定",
         SubTitle: "目前對話是否使用全域性模型設定",
