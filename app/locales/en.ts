@@ -441,9 +441,9 @@ const en: LocaleType = {
       Clone: "Clone",
     },
     Config: {
-      Avatar: "Bot Avatar",
-      Name: "Bot Name",
-      Description: "Bot Description",
+      Avatar: "Avatar",
+      Name: "Name",
+      Description: "Description",
       WelcomeMessage: "Welcome Message",
       Sync: {
         Title: "Use Global Config",
