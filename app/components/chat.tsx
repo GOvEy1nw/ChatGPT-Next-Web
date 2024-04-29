@@ -42,7 +42,7 @@ import {
   ChatMessage,
   SubmitKey,
   useChatStore,
-  BOT_HELLO,
+  createBotHelloMessage,
   createMessage,
   useAccessStore,
   Theme,
@@ -946,9 +946,9 @@ function _Chat() {
 
   if (
     context.length === 0 &&
-    session.messages.at(0)?.content !== BOT_HELLO.content
+    session.messages.at(0)?.content !== createBotHelloMessage(mask.name).content
   ) {
-    const copiedHello = Object.assign({}, BOT_HELLO);
+    const copiedHello = Object.assign({}, createBotHelloMessage(mask.name));
     if (!accessStore.isAuthorized()) {
       copiedHello.content = Locale.Error.Unauthorized;
     }
