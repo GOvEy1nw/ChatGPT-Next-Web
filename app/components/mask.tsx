@@ -148,6 +148,17 @@ export function MaskConfig(props: {
             }
           ></input>
         </ListItem>
+        <ListItem title={Locale.Mask.Config.Description}>
+          <input
+            type="text"
+            value={props.mask.description}
+            onChange={(e) =>
+              props.updateMask((mask) => {
+                mask.description = e.currentTarget.value;
+              })
+            }
+          />
+        </ListItem>
         <ListItem
           title={Locale.Mask.Config.HideContext.Title}
           subTitle={Locale.Mask.Config.HideContext.SubTitle}
