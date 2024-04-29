@@ -23,10 +23,10 @@ function MaskItem(props: { mask: Mask; onClick?: () => void }) {
       <MaskAvatar
         avatar={props.mask.avatar}
         model={props.mask.modelConfig.model}
-      />
+      /><div className={styles["new-chat"] + " one-line"}>
       <div className={styles["mask-name"] + " one-line"}>{props.mask.name}</div>
       <div className={styles["mask-description"] + " one-line"}>{props.mask.description}</div>
-    </div>
+    </div></div>
   );
 }
 
