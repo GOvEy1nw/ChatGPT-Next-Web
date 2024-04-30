@@ -12,6 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import EyeIcon from "../icons/eye.svg";
 import CopyIcon from "../icons/copy.svg";
 import DragIcon from "../icons/drag.svg";
+import InfoIcon from "../icons/information.svg";
 
 import { DEFAULT_MASK_AVATAR, Mask, useMaskStore } from "../store/mask";
 import {
@@ -598,12 +599,17 @@ export function MaskPage() {
                     <div className={styles["mask-name"]}>{m.name}</div>
                     <div className={styles["mask-info"]}>
                       {m.description}
-                      <br />
-                      {m.modelConfig.model}
                     </div>
                   </div>
                 </div>
                 <div className={styles["mask-actions"]}>
+                <IconButton
+                    icon={<InfoIcon />}
+                    text={""}
+                    title={`${Locale.Mask.Item.Info(m.context.length)} / ${ALL_LANG_OPTIONS[m.lang]} / ${m.modelConfig.model}`}
+                    onClick={() => {
+                    }}
+                  />
                   <IconButton
                     icon={<AddIcon />}
                     text={Locale.Mask.Item.Chat}
