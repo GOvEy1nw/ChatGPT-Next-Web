@@ -504,7 +504,6 @@ export function MaskPage() {
       } catch {}
     });
   };
-  const [showTitle, setShowTitle] = useState(false);
 
   return (
     <ErrorBoundary>
@@ -604,29 +603,34 @@ export function MaskPage() {
                   </div>
                 </div>
                 <div className={styles["mask-actions"]}>
-                  <IconButton
-                    icon={<InfoIcon />}
-                    text={""}
-                    onClick={() => {
-                      setSelectedMask(m);
-                    }}
-                  />
                   {selectedMask && selectedMask.id === m.id && (
-                  <Popover
-                    content={
-                      <>
-                        {Locale.Mask.Item.Info(m.context.length)}
-                        <br />
-                        {ALL_LANG_OPTIONS[m.lang]}
-                        <br />
-                        {m.modelConfig.model}
-                      </>
-                    }
-                  >
-                    <div className={styles["title-content"]}>
-                      Click to view info
-                    </div>
-                  </Popover>
+                    <Popover
+                      content={
+                        <div>
+                          {Locale.Mask.Item.Info(m.context.length)}
+                          <br />
+                          {ALL_LANG_OPTIONS[m.lang]}
+                          <br />
+                          {m.modelConfig.model}
+                        </div>
+                      }
+                      open={showPicker}
+                      onClose={() => setShowPicker(false)}
+                    >
+                      <div
+                        onClick={() => setShowPicker(true)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <IconButton
+                          icon={<InfoIcon />}
+                          text={""}
+                          onClick={() => {
+                            setSelectedMask(m);
+                          }}
+                        />
+                      </div>
+                    </Popover>
+
                   )}
                   <IconButton
                     icon={<AddIcon />}
