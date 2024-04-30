@@ -441,6 +441,7 @@ export function ContextPrompts(props: {
 export function MaskPage() {
   const navigate = useNavigate();
   const [selectedMask, setSelectedMask] = useState<Mask | null>(null);
+  const [showPicker, setShowPicker] = useState(false);
   const maskStore = useMaskStore();
   const chatStore = useChatStore();
 
