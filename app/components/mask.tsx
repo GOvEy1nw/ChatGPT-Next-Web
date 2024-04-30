@@ -604,33 +604,29 @@ export function MaskPage() {
                   </div>
                 </div>
                 <div className={styles["mask-actions"]}>
-                  {selectedMask && selectedMask.id === m.id && (
-                    <Popover
-                      content={
-                        <div>
-                          {Locale.Mask.Item.Info(m.context.length)}
-                          <br />
-                          {ALL_LANG_OPTIONS[m.lang]}
-                          <br />
-                          {m.modelConfig.model}
-                        </div>
-                      }
-                      open={showPicker}
-                      onClose={() => setShowPicker(false)}
-                    >
-                      <div
-                        onClick={() => setShowPicker(true)}
-                        style={{ cursor: "pointer" }}
-                      >
-                        <IconButton
-                          icon={<InfoIcon />}
-                          text={""}
-                          onClick={() => {
-                            setSelectedMask(m);
-                          }}
-                        />
+                  <Popover
+                    content={
+                      <div>
+                        {Locale.Mask.Item.Info(m.context.length)}
+                        <br />
+                        {ALL_LANG_OPTIONS[m.lang]}
+                        <br />
+                        {m.modelConfig.model}
                       </div>
-                    </Popover>
+                    }
+                    open={showPicker}
+                    onClose={() => setShowPicker(false)}
+                  >
+                    <div
+                      onClick={() => setShowPicker(true)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <IconButton
+                        icon={<InfoIcon />}
+                        text={"Info"}
+                      />
+                    </div>
+                  </Popover>
 
                   )}
                   <IconButton
