@@ -604,7 +604,7 @@ export function MaskPage() {
                   </div>
                 </div>
                 <div className={styles["mask-actions"]}>
-                <IconButton
+                  <IconButton
                     icon={<InfoIcon />}
                     text={""}
                     onClick={() => {
