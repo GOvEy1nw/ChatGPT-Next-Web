@@ -604,17 +604,16 @@ export function MaskPage() {
                   </div>
                 </div>
                 <div className={styles["mask-actions"]}>
+                {selectedMask && selectedMask.id === m.id && (
                   <Popover
                     content={
-                      showPicker && selectedMask && selectedMask.id === m.id ? (
-                        <div>
-                          {Locale.Mask.Item.Info(m.context.length)}
-                          <br />
-                          {ALL_LANG_OPTIONS[m.lang]}
-                          <br />
-                          {m.modelConfig.model}
-                        </div>
-                      ) : null
+                      <div>
+                        {Locale.Mask.Item.Info(m.context.length)}
+                        <br />
+                        {ALL_LANG_OPTIONS[m.lang]}
+                        <br />
+                        {m.modelConfig.model}
+                      </div>
                     }
                     open={showPicker}
                     onClose={() => setShowPicker(false)}
@@ -625,6 +624,7 @@ export function MaskPage() {
                       text={"Info"}
                     />
                   </Popover>
+                )}
                   <IconButton
                     icon={<AddIcon />}
                     text={Locale.Mask.Item.Chat}
