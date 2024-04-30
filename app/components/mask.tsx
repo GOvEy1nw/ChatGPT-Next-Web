@@ -612,13 +612,21 @@ export function MaskPage() {
                     }}
                   />
                   {selectedMask && selectedMask.id === m.id && (
+                  <Popover
+                    content={
+                      <>
+                        {Locale.Mask.Item.Info(m.context.length)}
+                        <br />
+                        {ALL_LANG_OPTIONS[m.lang]}
+                        <br />
+                        {m.modelConfig.model}
+                      </>
+                    }
+                  >
                     <div className={styles["title-content"]}>
-                      {Locale.Mask.Item.Info(m.context.length)}
-                      <br />
-                      {ALL_LANG_OPTIONS[m.lang]}
-                      <br />
-                      {m.modelConfig.model}
+                      Click to view info
                     </div>
+                  </Popover>
                   )}
                   <IconButton
                     icon={<AddIcon />}
