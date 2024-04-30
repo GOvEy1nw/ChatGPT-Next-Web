@@ -617,18 +617,12 @@ export function MaskPage() {
                     open={showPicker}
                     onClose={() => setShowPicker(false)}
                   >
-                    <div
+                    <IconButton
                       onClick={() => setShowPicker(true)}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <IconButton
-                        icon={<InfoIcon />}
-                        text={"Info"}
-                      />
-                    </div>
+                      icon={<InfoIcon />}
+                      text={"Info"}
+                    />
                   </Popover>
-
-                  )}
                   <IconButton
                     icon={<AddIcon />}
                     text={Locale.Mask.Item.Chat}
