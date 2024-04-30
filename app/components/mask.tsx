@@ -440,7 +440,7 @@ export function ContextPrompts(props: {
 
 export function MaskPage() {
   const navigate = useNavigate();
-
+  const [selectedMask, setSelectedMask] = useState<Mask | null>(null);
   const maskStore = useMaskStore();
   const chatStore = useChatStore();
 
@@ -608,10 +608,10 @@ export function MaskPage() {
                     icon={<InfoIcon />}
                     text={""}
                     onClick={() => {
-                      m.showTitle = !m.showTitle;
+                      setSelectedMask(m);
                     }}
                   />
-                  {m.showTitle && (
+                  {selectedMask && selectedMask.id === m.id && (
                     <div className={styles["title-content"]}>
                       {Locale.Mask.Item.Info(m.context.length)}
                       <br />
