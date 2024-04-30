@@ -610,13 +610,12 @@ export function MaskPage() {
                     onClick={() => {
                       setShowTitle(!showTitle);
                     }}
-                  >
-                    {showTitle && (
-                      <div className={styles["title-content"]}>
-                        {`${Locale.Mask.Item.Info(m.context.length)} / ${ALL_LANG_OPTIONS[m.lang]} / ${m.modelConfig.model}`}
-                      </div>
-                    )}
-                  </IconButton>
+                  />
+                  {showTitle && (
+                    <div className={styles["title-content"]}>
+                      {`${Locale.Mask.Item.Info(m.context.length)} / ${ALL_LANG_OPTIONS[m.lang]} / ${m.modelConfig.model}`}
+                    </div>
+                  )}
                   <IconButton
                     icon={<AddIcon />}
                     text={Locale.Mask.Item.Chat}
