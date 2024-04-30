@@ -606,7 +606,7 @@ export function MaskPage() {
                 <div className={styles["mask-actions"]}>
                   <Popover
                     content={
-                      selectedMask && selectedMask.id === m.id && (
+                      showPicker && selectedMask && selectedMask.id === m.id ? (
                         <div>
                           {Locale.Mask.Item.Info(m.context.length)}
                           <br />
@@ -614,7 +614,8 @@ export function MaskPage() {
                           <br />
                           {m.modelConfig.model}
                         </div>
-                      )}
+                      ) : null
+                    }
                     open={showPicker}
                     onClose={() => setShowPicker(false)}
                   >
