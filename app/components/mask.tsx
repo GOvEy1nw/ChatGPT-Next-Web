@@ -504,6 +504,7 @@ export function MaskPage() {
       } catch {}
     });
   };
+  const [showTitle, setShowTitle] = useState(false);
 
   return (
     <ErrorBoundary>
@@ -606,10 +607,16 @@ export function MaskPage() {
                 <IconButton
                     icon={<InfoIcon />}
                     text={""}
-                    title={`${Locale.Mask.Item.Info(m.context.length)} / ${ALL_LANG_OPTIONS[m.lang]} / ${m.modelConfig.model}`}
                     onClick={() => {
+                      setShowTitle(!showTitle);
                     }}
-                  />
+                  >
+                    {showTitle && (
+                      <div className={styles["title-content"]}>
+                        {`${Locale.Mask.Item.Info(m.context.length)} / ${ALL_LANG_OPTIONS[m.lang]} / ${m.modelConfig.model}`}
+                      </div>
+                    )}
+                  </IconButton>
                   <IconButton
                     icon={<AddIcon />}
                     text={Locale.Mask.Item.Chat}
