@@ -608,12 +608,16 @@ export function MaskPage() {
                     icon={<InfoIcon />}
                     text={""}
                     onClick={() => {
-                      setShowTitle(!showTitle);
+                      setShowTitle(!showTitle.m.id);
                     }}
                   />
                   {showTitle && (
                     <div className={styles["title-content"]}>
-                      {`${Locale.Mask.Item.Info(m.context.length)} / ${ALL_LANG_OPTIONS[m.lang]} / ${m.modelConfig.model}`}
+                      {Locale.Mask.Item.Info(m.context.length)}
+                      <br />
+                      {ALL_LANG_OPTIONS[m.lang]}
+                      <br />
+                      {m.modelConfig.model}
                     </div>
                   )}
                   <IconButton
