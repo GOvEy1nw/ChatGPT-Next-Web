@@ -440,7 +440,7 @@ export function ContextPrompts(props: {
 
 export function MaskPage() {
   const navigate = useNavigate();
-  const [showPopover, setShowPopover] = useState({});
+  const [showPopover, setShowPopover] = useState<Mask | null>(null);
   const maskStore = useMaskStore();
   const chatStore = useChatStore();
 
