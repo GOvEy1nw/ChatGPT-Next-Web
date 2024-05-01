@@ -619,7 +619,10 @@ export function MaskPage() {
                     onClose={() => setShowPicker(false)}
                   >
                     <IconButton
-                      onClick={() => setShowPicker(true) + setSelectedMask(m)}
+                      onClick={() => {
+                        setShowPicker(true);
+                        setSelectedMask(m);
+                      }}
                       icon={<InfoIcon />}
                       text={"Info"}
                     />
