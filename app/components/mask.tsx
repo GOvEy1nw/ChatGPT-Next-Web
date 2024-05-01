@@ -440,8 +440,7 @@ export function ContextPrompts(props: {
 
 export function MaskPage() {
   const navigate = useNavigate();
-  const [selectedMask, setSelectedMask] = useState<Mask | null>(null);
-  const [showPicker, setShowPicker] = useState(false);
+  const [showPopover, setShowPopover] = useState({});
   const maskStore = useMaskStore();
   const chatStore = useChatStore();
 
@@ -604,30 +603,25 @@ export function MaskPage() {
                   </div>
                 </div>
                 <div className={styles["mask-actions"]}>
-                {selectedMask && selectedMask.id === m.id && (
-                  <Popover
-                    content={
-                      <div>
-                        {Locale.Mask.Item.Info(m.context.length)}
-                        <br />
-                        {ALL_LANG_OPTIONS[m.lang]}
-                        <br />
-                        {m.modelConfig.model}
-                      </div>
-                    }
-                    open={showPicker}
-                    onClose={() => setShowPicker(false)}
-                  >
-                    <IconButton
-                      onClick={() => {
-                        setShowPicker(true);
-                        setSelectedMask(m);
-                      }}
-                      icon={<InfoIcon />}
-                      text={"Info"}
-                    />
-                  </Popover>
-                )}
+                    <Popover
+                      content={
+                        <div>
+                          {Locale.Mask.Item.Info(m.context.length)}
+                          <br />
+                          {ALL_LANG_OPTIONS[m.lang]}
+                          <br />
+                          {m.modelConfig.model}
+                        </div>
+                      }
+                      open={showPopover[m.id] || false}
+                      onClose={() => setShowPopover({ ...showPopover, [m.id]: false })}
+                    >
+                      <IconButton
+                        onClick={() => setShowPopover({ ...showPopover, [m.id]: true })}
+                        icon={<InfoIcon />}
+                        text={"Info"}
+                      />
+                    </Popover>
                   <IconButton
                     icon={<AddIcon />}
                     text={Locale.Mask.Item.Chat}
